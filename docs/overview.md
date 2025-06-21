@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Chemary 概要
+# Chemaryとは
 
 ## コンセプト
 

@@ -100,11 +100,11 @@ const config: Config = {
             },
             {
               label: 'はじめる',
-              to: '/docs/tutorial/T1-first-visit',
+              to: '/docs/tutorial/browser-access',
             },
             {
               label: '使い方',
-              to: '/docs/how-to/H1-search-papers',
+              to: '/docs/how-to/daily-check',
             },
           ],
         },

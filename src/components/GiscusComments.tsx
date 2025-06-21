@@ -9,9 +9,9 @@ export default function GiscusComments() {
     <Giscus
       id="comments"
       repo="clameyes/chemary-docs"
-      repoId="R_kgDONkQE-g"
+      repoId="R_kgDOO_ZKuw"
       category="Announcements"
-      categoryId="DIC_kwDONkQE-s4CkQpZ"
+      categoryId="DIC_kwDOO_ZKu84CrznX"
       mapping="pathname"
       reactionsEnabled="1"
       emitMetadata="0"
