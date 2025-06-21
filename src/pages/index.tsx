@@ -24,8 +24,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--primary button--lg"
-            to="https://chemary.app"
-            style={{marginLeft: '1rem'}}>
+            to="https://chemary.app">
             Chemaryを使ってみる
           </Link>
         </div>

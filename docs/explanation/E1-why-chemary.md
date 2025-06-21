@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# E1: なぜChemaryが必要なのか
+# なぜChemaryが必要なのか
 
 ## 化学研究の情報収集における課題
 
