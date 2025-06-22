@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # RSS統合システム
 
-Chemaryの自動データ取得システムについて詳しく説明します。
+Chemmaryの自動データ取得システムについて詳しく説明します。
 
 ## RSS取得システム概要
 
@@ -91,6 +91,29 @@ processing:
   author_parsing: "Wiley format processing"
   doi_extraction: "Extract DOI from Wiley URL"
 ```
+
+## 日付データの扱いについて
+
+### 重要な仕様
+Chemmaryでは**RSSフィードの更新日時**を論文の表示日として使用しています。これは以下の理由によるものです：
+
+#### 各ジャーナルの日付の違い
+- **JACS**: `dc:date`（オンライン発表日）と`prism:coverDate`（印刷版発行日）が異なる
+- **Angewandte**: RSSフィードの更新日と実際の論文発表日が異なる場合がある
+- **Nature Chemistry**: RSS配信タイミングと論文発表タイミングの差
+
+#### 統一された日付ポリシー
+```typescript
+// 日付優先順位
+const datePriority = [
+  'pubDate',           // RSS配信日（最優先）
+  'dc:date',          // ダブリンコア日付
+  'prism:coverDate',  // 印刷版発行日
+  'description'       // 説明文から抽出
+];
+```
+
+**注意**: 表示される日付は論文の実際の発表日と異なる場合があります。これは各ジャーナルのRSS配信方式の違いによるものです。
 
 ## データ処理パイプライン
 

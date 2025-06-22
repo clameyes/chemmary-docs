@@ -8,7 +8,7 @@ export default function GiscusComments() {
   return (
     <Giscus
       id="comments"
-      repo="clameyes/chemary-docs"
+      repo="clameyes/chemmary-docs"
       repoId="R_kgDOO_ZKuw"
       category="Announcements"
       categoryId="DIC_kwDOO_ZKu84CrznX"

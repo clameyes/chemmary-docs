@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Chemary',
+  title: 'Chemmary',
   tagline: '化学分野の最新情報を一箇所で',
   favicon: 'img/favicon.ico',
 
@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://chemary-docs.netlify.app',
+  url: 'https://chemmary-docs.netlify.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -23,7 +23,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'clameyes', // Usually your GitHub org/user name.
-  projectName: 'chemary-docs', // Usually your repo name.
+  projectName: 'chemmary-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -45,9 +45,15 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/clameyes/chemary-docs/tree/main/',
+            'https://github.com/clameyes/chemmary-docs/tree/main/',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Chemmary Project.`,
+          },
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -59,9 +65,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Chemary',
+      title: 'Chemmary',
       logo: {
-        alt: 'Chemary Logo',
+        alt: 'Chemmary Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -71,18 +77,19 @@ const config: Config = {
           position: 'left',
           label: 'ユーザーガイド',
         },
+        {to: '/blog', label: 'リリースノート', position: 'left'},
         {
-          href: 'https://github.com/clameyes/chemary-docs/issues',
-          label: 'Issues',
+          href: 'https://github.com/clameyes/chemmary-docs/issues',
+          label: '要望・報告',
           position: 'right',
         },
         {
-          href: 'https://github.com/clameyes/chemary-docs/discussions',
-          label: 'Discussions',
+          href: 'https://github.com/clameyes/chemmary-docs/discussions',
+          label: '質問・相談',
           position: 'right',
         },
         {
-          href: 'https://github.com/clameyes/chemary-docs',
+          href: 'https://github.com/clameyes/chemmary-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -113,11 +120,11 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Issues',
-              href: 'https://github.com/clameyes/chemary-docs/issues',
+              href: 'https://github.com/clameyes/chemmary-docs/issues',
             },
             {
               label: 'Discussions',
-              href: 'https://github.com/clameyes/chemary-docs/discussions',
+              href: 'https://github.com/clameyes/chemmary-docs/discussions',
             },
           ],
         },
@@ -125,17 +132,17 @@ const config: Config = {
           title: 'リンク',
           items: [
             {
-              label: 'Chemary (本体)',
-              href: 'https://chemary.app',
+              label: 'Chemmary (本体)',
+              href: 'https://chemmary.com',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/clameyes/chemary-docs',
+              href: 'https://github.com/clameyes/chemmary-docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Chemary Project. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Chemmary Project. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

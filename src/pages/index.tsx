@@ -24,8 +24,8 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--primary button--lg"
-            to="https://chemary.app">
-            Chemaryを使ってみる
+            to="https://chemmary.com">
+            Chemmaryを使ってみる
           </Link>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title} - 化学分野の情報収集ポータル`}
-      description="Chemaryは化学分野の研究者、学生、技術者のための情報収集ポータルサイトです。最新の論文アブストラクトを一箇所で効率的に確認できます。">
+      description="Chemmaryは化学分野の研究者、学生、技術者のための情報収集ポータルサイトです。最新の論文アブストラクトを一箇所で効率的に確認できます。">
       <HomepageHeader />
       <main>
         <section className={styles.features}>
