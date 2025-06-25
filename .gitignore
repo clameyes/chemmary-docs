@@ -26,3 +26,13 @@ terraform.tfvars
 .terraform/
 .terraform.lock.hcl
 deploy.sh
+
+# terraform variables
+terraform.tfvars
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.*
