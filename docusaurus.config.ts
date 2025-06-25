@@ -68,7 +68,7 @@ const config: Config = {
       title: 'Chemmary β版',
       logo: {
         alt: 'Chemmary Logo',
-        src: 'img/chemmary_icon_svg.svg',
+        src: 'img/chemmary_icon_512x512.png',
         width: 32,
         height: 32,
       },
