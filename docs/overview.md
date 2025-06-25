@@ -10,6 +10,24 @@ Chemmaryは現在β版として提供されています。正式版リリース�
 
 ## コンセプト
 
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+  <div style={{
+    backgroundColor: 'rgba(37, 99, 235, 0.1)',
+    borderRadius: '24px',
+    padding: '20px',
+    display: 'inline-block',
+    marginBottom: '1rem'
+  }}>
+    <img 
+      src="/img/chemmary_icon_512x512.png" 
+      alt="Chemmary Logo" 
+      width="80" 
+      height="80"
+      style={{borderRadius: '16px'}}
+    />
+  </div>
+</div>
+
 Chemmaryは、化学分野の研究者、学生、技術者のための情報収集ポータルサイトです。日々更新される最新の論文やニュースを一箇所で効率的に確認できます。
 
 ### 解決する課題

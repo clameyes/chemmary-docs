@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Chemmary',
+  title: 'Chemmary β版',
   tagline: '化学分野の最新情報を一箇所で',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/chemmary_favicon_ico.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -65,10 +65,12 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Chemmary',
+      title: 'Chemmary β版',
       logo: {
         alt: 'Chemmary Logo',
-        src: 'img/logo.svg',
+        src: 'img/chemmary_icon_svg.svg',
+        width: 32,
+        height: 32,
       },
       items: [
         {
@@ -132,7 +134,7 @@ const config: Config = {
           title: 'リンク',
           items: [
             {
-              label: 'Chemmary (本体)',
+              label: 'Chemmary β版 (本体)',
               href: 'https://chemmary.com',
             },
             {

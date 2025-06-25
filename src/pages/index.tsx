@@ -12,6 +12,24 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        <div className="text--center margin-bottom--lg">
+          <div style={{
+            backgroundColor: 'rgba(255,255,255,0.9)',
+            backdropFilter: 'blur(10px)',
+            borderRadius: '24px',
+            padding: '16px',
+            display: 'inline-block',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.15)'
+          }}>
+            <img 
+              src="/img/chemmary_icon_512x512.png" 
+              alt="Chemmary Logo" 
+              width="128" 
+              height="128"
+              style={{borderRadius: '16px'}}
+            />
+          </div>
+        </div>
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
@@ -25,7 +43,7 @@ function HomepageHeader() {
           <Link
             className="button button--primary button--lg"
             to="https://chemmary.com">
-            Chemmaryを使ってみる
+            Chemmary β版を使ってみる
           </Link>
         </div>
       </div>
@@ -59,7 +77,7 @@ export default function Home(): ReactNode {
               <div className="col col--4">
                 <div className="text--center">
                   <h3>⚡ 高速・無料</h3>
-                  <p>SSGによる高速ページロード。広告なし、トラッキングなしで完全無料でご利用いただけます。</p>
+                  <p>SSGによる高速ページロード。トラッキングなしで完全無料でご利用いただけます。</p>
                 </div>
               </div>
             </div>
